@@ -7,6 +7,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthGuard, canActivate } from './auth.guard';
+import { GaleryComponent } from './components/galery/galery.component';
+import { InfoComponent } from './components/info/info.component';
 
 const routes: Routes = [
   {path: '', component:ItemListComponent, canActivate: [canActivate]},
@@ -15,7 +17,8 @@ const routes: Routes = [
   {path: 'item-form/:id', component: ItemFormComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'galery', component: GaleryComponent }, 
+  { path: 'info', component: InfoComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent }, 
 ];
 

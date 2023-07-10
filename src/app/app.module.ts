@@ -32,7 +32,9 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { InfoComponent } from './components/info/info.component';
+import { GaleryComponent } from './components/galery/galery.component';
+import {MatMenuModule} from '@angular/material/menu'
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    NavbarComponent
+    NavbarComponent,
+    InfoComponent,
+    GaleryComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +71,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HttpClientModule,
     FormsModule,
     AngularFireAuthModule,
+    MatMenuModule
 
     
   ],
